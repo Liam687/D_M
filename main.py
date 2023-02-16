@@ -120,7 +120,11 @@ except WeChatClientException as e:
   exit(502)
 
 wm = WeChatMessage(client)
-weather = get_weather()
+
+# 传入省份和市获取天气信息
+province, city = "北京", "北京"
+weather = get_weather(province, city)
+  
 if weather is None:
   print('获取天气失败')
   exit(422)
@@ -165,9 +169,6 @@ data = {
 
 if __name__ == '__main__':
   count = 0
-  # 传入省份和市获取天气信息
-  province, city = "北京", "北京"
-  weather, max_temperature, min_temperature = get_weather(province, city)
   
   try:
     for user_id in user_ids:
