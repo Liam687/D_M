@@ -148,11 +148,11 @@ data = {
     "color": get_random_color()
   },
   "highest": {
-    "value": math.floor(weather[1]),
+    "value": weather[1],
     "color": get_random_color()
   },
   "lowest": {
-    "value": math.floor(weather[2]),
+    "value": weather[2],
     "color": get_random_color()
   },
   "love_days": {
