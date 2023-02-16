@@ -1,6 +1,7 @@
 from datetime import date, datetime, timedelta
 import math
 import cityinfo
+from time import time, localtime
 from wechatpy import WeChatClient, WeChatClientException
 from wechatpy.client.api import WeChatMessage
 import requests
