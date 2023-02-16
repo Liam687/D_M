@@ -6,6 +6,7 @@ from wechatpy import WeChatClient, WeChatClientException
 from wechatpy.client.api import WeChatMessage
 import requests
 import os
+from requests import get, post
 import random
 
 nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
